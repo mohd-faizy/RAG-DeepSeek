@@ -67,9 +67,17 @@ $ pip install -r requirements.txt
 
 ### **⚙️ Step 3: Run the Application**  
 
-```bash
-$ streamlit run app/main.py
-```
+1. Start Ollama service:
+
+   ```bash
+   ollama serve
+   ```
+
+2. In a separate terminal, launch the chat interface:
+
+   ```bash
+   streamlit run app/main.py
+   ```
 
 The application will launch in your browser at `http://localhost:0000/`.  
 
