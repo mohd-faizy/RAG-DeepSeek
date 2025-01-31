@@ -9,138 +9,126 @@
 ![HuggingFace](https://img.shields.io/badge/HuggingFace-FFD43B?logo=huggingface&logoColor=black)
 ![FAISS](https://img.shields.io/badge/FAISS-00A98F?logo=faiss&logoColor=white)
 
+---
 
-![Demo]()
+## 🌟 **Overview**  
 
-AI-powered chatbot designed specifically for interactive document retrieval from PDFs. This project leverages the capabilities of **DeepSeek-R1 (1.5B parameters)** alongside **Streamlit** for a user-friendly interface, **Ollama** for model serving, and **FAISS** for efficient vector search and retrieval, creating a seamless experience for extracting and querying knowledge from uploaded PDF documents.
+**RAG PDF Assistant** is an AI-powered **Retrieval-Augmented Generation (RAG)** chatbot that enables **intelligent PDF document search and retrieval.** It combines:  
 
-![Demo]()
+✅ **DeepSeek-R1 (1.5B)** – Advanced AI-powered language model for **accurate responses.**  
+✅ **FAISS** – Fast vector search for **efficient document retrieval.**  
+✅ **Ollama** – Lightweight model serving and **seamless inference.**  
+✅ **LangChain** – Modular AI framework for **query execution and reasoning.**  
+✅ **Streamlit** – Intuitive and interactive **web-based UI.**  
+
+### 🎯 **Use Cases**  
+
+🔍 **Quickly search** through large PDF documents.  
+📄 **Summarize reports, research papers, contracts,** and more.  
+📘 **Extract relevant information** with AI-driven accuracy.  
+🤖 **Ask natural language questions** and get concise answers.  
 
 ---
 
-## 📁 Detailed Directory Structure
+## 🚀 **Demo Screenshots**  
 
+### **📌 UI Preview**  
+
+![Demo](https://github.com/mohd-faizy/RAG-DeepSeek/blob/main/assets/rag-pdf-retv.png?raw=true)  
+
+### **📌 Application Workflow**  
+
+![Workflow](https://github.com/mohd-faizy/RAG-DeepSeek/blob/main/assets/RAG-app-flow.png?raw=true)  
+
+---
+
+## 🛠️ **Installation & Setup**  
+
+### **🔧 Prerequisites**  
+
+Ensure you have the following installed:  
+
+- **Python 3.9+**  
+- **pip** (Python package manager)  
+- **Git** (for cloning the repository)  
+
+### **📥 Step 1: Clone the Repository**  
+
+```bash
+$ git clone https://github.com/mohd-faizy/RAG-DeepSeek.git
+$ cd RAG-DeepSeek
 ```
 
+### **📦 Step 2: Install Dependencies**  
+
+```bash
+$ pip install -r requirements.txt
+```
+
+### **⚙️ Step 3: Run the Application**  
+
+```bash
+$ streamlit run app/main.py
+```
+
+The application will launch in your browser at `http://localhost:0000/`.  
+
+---
+
+## 📁 **Directory Structure**  
+
+```plaintext
 RAG-DeepSeek/
 ├── app/
-│   ├── __init__.py          # Python package initialization file
-│   ├── main.py              # Main Streamlit application file where the chat interface is defined
-│   ├── utils.py             # Contains helper functions for document processing, embedding, and retrieval
-├── assets/                  # Folder for storing static files like images, CSS, etc.
-├── requirements.txt         # Lists all Python dependencies needed for the project
-├── .gitignore               # Specifies files to be ignored by Git
-├── README.md                # This README file with detailed project information
-
+│   ├── __init__.py          # Python package initialization
+│   ├── main.py              # Main Streamlit application file
+│   ├── utils.py             # Utility functions for PDF processing, embeddings, retrieval
+├── assets/                  # Static files like images, CSS, etc.
+├── requirements.txt         # Python dependencies
+├── .gitignore               # Files ignored by Git
+├── README.md                # Project documentation
 ```
 
 ---
 
-## 🚀 Quick Start Guide
+## 🧠 **How It Works**  
 
-### Prerequisites
+1️⃣ **Upload a PDF** → The AI extracts and indexes the content.  
+2️⃣ **Ask a question** → The system searches for the most relevant passages.  
+3️⃣ **AI answers your query** → Based on retrieved document content.  
 
-- **Python 3.9 or higher**: Ensure you have Python installed on your system.
-- **Ollama**: Download and install Ollama from [here](https://ollama.ai/). Make sure it's running before proceeding.
-- **DeepSeek-R1 Model**: Pull the model using:
-- 
-  ```bash
-  ollama pull deepseek-r1:1.5b
-  ```
-
-### Installation Steps
-
-1. __Clone the Repository__:
-
-   ```bash
-   git clone https://github.com/mohd-faizy/RAG-DeepSeek.git
-   ```
-
-2. __Navigate to the Project Directory__:
-
-   ```bash
-   cd RAG-DeepSeek
-   ```
-
-3. __Setup Virtual Environment__:
-
-   ```bash
-   python -m venv venv
-   ```
-
-4. __Activate the Virtual Environment__:
-   - __For Linux/macOS__:
-
-     ```bash
-     source venv/bin/activate
-     ```
-
-   - __For Windows__:
-
-     ```bash
-     .\venv\Scripts\activate
-     ```
-
-5. __Install Required Dependencies__:
-
-   ```bash
-   pip install -r requirements.txt
-   ```
+🔹 **Uses FAISS** for **fast, efficient document retrieval.**  
+🔹 **DeepSeek-R1** ensures **high-quality, context-aware answers.**  
 
 ---
 
-## 🖥️ Usage Instructions
+## 🔗 **Technologies Used**  
 
-1. __Start Ollama Service__:
-
-   ```bash
-   ollama serve
-   ```
-
-2. __Launch the Chat Interface__:
-   In another terminal window, run:
-
-   ```bash
-   streamlit run app/main.py
-   ```
-
-   This will open the Streamlit app in your default web browser where you can interact with the chatbot.
+| **Technology**  | **Purpose**  |
+|---------------|-------------|
+| **DeepSeek-R1 (1.5B)** | Language model for intelligent responses |
+| **Ollama** | Model serving and inference |
+| **FAISS** | Vector search for document retrieval |
+| **LangChain** | AI-driven reasoning and query handling |
+| **Streamlit** | User-friendly web interface |
+| **PDFPlumber** | Extracting text from PDFs |
 
 ---
 
-## 🔧 Troubleshooting Guide
 
-### Port Conflict (11434)
+### **🤝 Steps to Contribute**  
 
-If you encounter issues with port 11434 being in use:
+1. Fork the repository  
+2. Create a new feature branch (`git checkout -b feature-name`)  
+3. Commit your changes (`git commit -m "Added new feature"`)  
+4. Push to your fork (`git push origin feature-name`)  
+5. Open a pull request  
 
-- __For Windows__:
-
-  ```bash
-  netstat -ano | findstr :11434
-  taskkill /PID <PID> /F
-  ```
-
-- __For Linux/macOS__:
-
-  ```bash
-  lsof -i :11434
-  kill -9 <PID>
-  ```
-
-### Common Issues
-
-- Ensure that the Ollama service is actively running before you start the Streamlit application.
-- Verify the installation of the DeepSeek-R1 model by running `ollama list`.
-- If there are connection issues, review your firewall settings to allow necessary ports.
-
-## 🍰 Contributing
-
-Contributions are welcome!
+---
 
 ## ⚖ ➤ License
 
-This project is licensed under the MIT License. See [LICENSE](LICENSE) for details.
+This project is licensed under the **MIT License**. See the [LICENSE](LICENSE) file for details.  
 
 ## ❤️ Support
 
