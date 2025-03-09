@@ -11,6 +11,14 @@
 
 ---
 
+## 🚀🔥 Live Demo 🌍  
+
+👉 **Click below to try it now:**  
+
+[![🚀 Try it Now](https://img.shields.io/badge/Try%20Live-Click%20Here-28a745?style=for-the-badge)](https://rag-deepseek-4xbslhkxhxxdwtmxs7ceey.streamlit.app)
+
+
+
 ## 🌟 **Overview**  
 
 **RAG PDF Assistant** is an AI-powered **Retrieval-Augmented Generation (RAG)** chatbot that enables **intelligent PDF document search and retrieval.** It combines:  
